@@ -1,0 +1,35 @@
+[package]
+name = "drawing"
+version = "0.1.0"
+authors = ["Aron Granberg <aron.granberg@gmail.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[features]
+vulkan = ["rendy/vulkan"]
+spirv-reflection = []
+
+[dependencies]
+rendy = { path = "../rendy/rendy", version = "0.3" }
+nalgebra = "0.18"
+log = "0.4"
+rand = "0.6"
+genmesh = "0.6"
+lazy_static = "1.3"
+failure = "0.1"
+env_logger = "0.6"
+gfx-hal = "0.2"
+rendy-command = { path = "../rendy/command", version = "0.3.0" }
+rendy-descriptor = { path = "../rendy/descriptor", version = "0.3.0" }
+rendy-chain = { path = "../rendy/chain", version = "0.3.0" }
+rendy-factory = { path = "../rendy/factory", version = "0.3.0" }
+rendy-frame = { path = "../rendy/frame", version = "0.3.0" }
+rendy-graph = { path = "../rendy/graph", version = "0.3.1" }
+rendy-memory = { path = "../rendy/memory", version = "0.3.0" }
+rendy-mesh = { path = "../rendy/mesh", version = "0.3.0" }
+rendy-shader = { path = "../rendy/shader", version = "0.3.0" }
+rendy-resource = { path = "../rendy/resource", version = "0.3.0" }
+rendy-texture = { path = "../rendy/texture", version = "0.3.0" }
+rendy-util = { path = "../rendy/util", version = "0.3.0" }
+rendy-wsi = { path = "../rendy/wsi", version = "0.3.0" }
